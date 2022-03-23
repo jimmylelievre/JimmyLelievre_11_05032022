@@ -1,0 +1,52 @@
+.background {
+  display: flex;
+  margin-left: 12%;
+  margin-right: 12%;
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  margin-top: 43px;
+  padding-top: 56px;
+  padding-bottom: 43px;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.housing-card {
+  display: flex;
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  h2 {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-size: 18px;
+    z-index: 6;
+  }
+
+  img {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .overlay {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    z-index: 5;
+  }
+}

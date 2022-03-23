@@ -1,0 +1,27 @@
+.carousel {
+  position: relative;
+  margin-left: 12%;
+  margin-right: 12%;
+
+  .img {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+  }
+
+  .button-next {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    cursor: pointer;
+  }
+  .button-previous {
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+    left: 20px;
+  }
+}

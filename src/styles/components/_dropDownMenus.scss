@@ -1,0 +1,41 @@
+.dropDown-title {
+  display: flex;
+  justify-content: space-between;
+  height: 52px;
+  background: #ff6060;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  h3 {
+    color: white;
+  }
+}
+.dropDown-block {
+  width: 50%;
+  margin-top: 20px;
+
+  p,
+  ul {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 142.6%;
+    background: #f7f7f7;
+    border-radius: 10px;
+    padding: 40px 20px;
+  }
+  li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.6%;
+  }
+  svg {
+    margin-right: 17px;
+    cursor: pointer;
+  }
+}

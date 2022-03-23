@@ -1,0 +1,31 @@
+.housing {
+  .description {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+
+  .dropDownMenus {
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+  }
+  .title-host {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tags-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+  }
+}
