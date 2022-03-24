@@ -15,7 +15,7 @@
   }
 }
 .dropDown-block {
-  width: 50%;
+  width: 62%;
   margin-top: 20px;
 
   p,
@@ -37,5 +37,21 @@
   svg {
     margin-right: 17px;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .dropDown-block {
+    width: 100%;
+
+    p {
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 13px;
+    }
+    li {
+      font-size: 12px;
+    }
   }
 }

@@ -15,8 +15,7 @@
   }
   .tags-rating {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
   }
   h1 {
     font-weight: 500;
@@ -27,5 +26,34 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .housing {
+    h1 {
+      font-size: 18px;
+    }
+    .description {
+      display: flex;
+      flex-direction: column;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .title-host {
+      flex-wrap: wrap;
+    }
+    .tags-rating {
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      margin-top: 16px;
+    }
+
+    .dropDownMenus {
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 0;
+    }
   }
 }

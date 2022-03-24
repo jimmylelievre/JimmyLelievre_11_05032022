@@ -37,12 +37,12 @@ const Housing = () => {
           <div>
             <h1>{housingData.title}</h1>
             <h2>{housingData.location}</h2>
+            <Tags props={housingData} />
           </div>
-          <Host host={housingData.host} />
-        </div>
-        <div className="tags-rating">
-          <Tags props={housingData} />
-          <Rating rating={housingData.rating} />
+          <div className="tags-rating">
+            <Host host={housingData.host} />
+            <Rating rating={housingData.rating} />
+          </div>
         </div>
         <div className="dropDownMenus">
           <DropDownMenus name="Description" content={housingData.description} />

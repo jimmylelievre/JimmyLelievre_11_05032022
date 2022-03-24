@@ -1,10 +1,10 @@
 import React from "react";
 
-const RedStar = () => {
+const RedStar = ({ size }) => {
   return (
     <div>
       <svg
-        width="30"
+        width={size}
         height="30"
         viewBox="0 0 30 30"
         fill="none"

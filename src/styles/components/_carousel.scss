@@ -25,3 +25,17 @@
     left: 20px;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .carousel {
+    margin-left: 5%;
+    margin-right: 5%;
+    .img {
+      margin-top: 20px;
+      border-radius: 25px;
+      margin-bottom: 30px;
+      height: 415px;
+      width: 100%;
+    }
+  }
+}

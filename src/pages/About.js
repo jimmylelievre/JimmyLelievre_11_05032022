@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import aboutBanner from "../assets/aboutBanner.jpg";
+import bannerAbout from "../assets/bannerAbout.jpg";
+
 import DropDownMenus from "../components/DropDownMenus";
 import aboutText from "../assets/aboutText.json";
 import Footer from "../components/Footer";
@@ -10,7 +12,7 @@ const About = () => {
   return (
     <div>
       <Header></Header>
-      <Banner img={aboutBanner} />
+      <Banner img={bannerAbout} />
       <div className="about">
         <DropDownMenus name="Fiabilité" content={aboutText[0].fiabilite} />
         <DropDownMenus name="Respect" content={aboutText[0].respect} />

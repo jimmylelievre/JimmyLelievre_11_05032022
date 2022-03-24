@@ -6,7 +6,7 @@ const Rating = ({ rating }) => {
   const ratingArray = Array.from({ length: 5 }, (_, i) =>
     i < rating ? 1 : 0
   ).map((rate, i) =>
-    rate === 1 ? <RedStar key={i} /> : <EmptyStar key={i} />
+    rate === 1 ? <RedStar key={i} size="15" /> : <EmptyStar key={i} size="15" />
   );
 
   return (
