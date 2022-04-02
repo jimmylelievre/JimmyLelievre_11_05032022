@@ -13,12 +13,16 @@
   }
 
   .button-next {
+    width: 46px;
+    height: 79px;
     position: absolute;
     top: 40%;
     right: 20px;
     cursor: pointer;
   }
   .button-previous {
+    width: 46px;
+    height: 79px;
     position: absolute;
     top: 40%;
     cursor: pointer;
@@ -31,11 +35,21 @@
     margin-left: 5%;
     margin-right: 5%;
     .img {
+      height: 255px;
       margin-top: 20px;
-      border-radius: 25px;
+      border-radius: 10px;
       margin-bottom: 30px;
-      height: 415px;
       width: 100%;
+    }
+    .button-next {
+      top: 50%;
+      width: 11px;
+      height: 19px;
+    }
+    .button-previous {
+      top: 50%;
+      width: 11px;
+      height: 19px;
     }
   }
 }

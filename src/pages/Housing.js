@@ -30,7 +30,7 @@ const Housing = () => {
   return (
     <div className="housing">
       <Header />
-      <Carousel props={housingData.pictures} />
+      <Carousel pictures={housingData.pictures} />
 
       <div className="description">
         <div className="title-host">

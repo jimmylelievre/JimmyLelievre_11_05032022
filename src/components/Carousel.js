@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-const Carousel = ({ props }) => {
-  const [contentPicture, setContentPicture] = useState([]);
+const Carousel = ({ pictures }) => {
   const [index, setIndex] = useState(0);
 
-  console.log(contentPicture && contentPicture.length);
-  useEffect(() => {
-    setContentPicture(props);
-  }, [contentPicture]);
-
   const nextPicture = () => {
-    if (index >= (contentPicture && contentPicture.length) - 1) {
+    if (index >= pictures.length - 1) {
       setIndex(0);
     } else {
       setIndex(index + 1);
@@ -19,7 +13,7 @@ const Carousel = ({ props }) => {
 
   const previousPicture = () => {
     if (index <= 0) {
-      setIndex((contentPicture && contentPicture.length) - 1);
+      setIndex(pictures.length - 1);
     } else {
       setIndex(index - 1);
     }
@@ -27,15 +21,12 @@ const Carousel = ({ props }) => {
 
   return (
     <section className="carousel">
-      <img
-        className="img"
-        src={contentPicture && contentPicture[index]}
-        alt=""
-      />
+      <img className="img" src={pictures[index]} alt="" />
+
       <div type="button" onClick={nextPicture} className="button-next">
         <svg
-          width="48"
-          height="80"
+          width="100%"
+          height="100%"
           viewBox="0 0 48 80"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -48,8 +39,8 @@ const Carousel = ({ props }) => {
       </div>
       <div type="button" onClick={previousPicture} className="button-previous">
         <svg
-          width="48"
-          height="80"
+          width="100%"
+          height="100%"
           viewBox="0 0 48 80"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
